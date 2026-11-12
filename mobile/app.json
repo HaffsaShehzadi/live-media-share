@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "Live Media Share",
+    "slug": "live-media-share",
+    "scheme": "livemediashare",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Allow Live Media Share to access your camera for live video meetings and streaming.",
+        "NSMicrophoneUsageDescription": "Allow Live Media Share to access your microphone for live audio in meetings."
+      }
+    },
+    "android": {
+      "package": "com.livemediashare.app",
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.MODIFY_AUDIO_SETTINGS",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.INTERNET",
+        "android.permission.ACCESS_NETWORK_STATE",
+        "android.permission.FOREGROUND_SERVICE",
+        "android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION"
+      ]
+    },
+    "plugins": [
+      "expo-sharing"
+    ],
+    "extra": {
+      "defaultServerPort": 4000,
+      "defaultServerIp": "10.113.48.40"
+    }
+  }
+}
